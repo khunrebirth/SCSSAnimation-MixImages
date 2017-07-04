@@ -1,0 +1,10 @@
+@mixin obj-size($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin obj-position($top: 0, $left: 0, $z: 0) {
+	z-index: $z;
+	top: $top;
+	left: $left;
+}

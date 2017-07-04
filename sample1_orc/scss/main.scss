@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins/orc";
+
+body {
+	background-image: url(../images/bg3.jpg);
+}
+
+.orc-raider {
+	@include obj-size(500px, 500px);
+	@include obj-position(70px, 0px, 1);
+	position: relative;
+	animation: riding 4s ease-in;
+	// animation-fill-mode: forwards;
+}
+
+.orc-head {
+	@include obj-size(197px, 155px);
+	@include obj-position(17px, 116px, 100);
+	background-image: url(../images/Head.png);
+	position: relative;
+	animation: heading 1s ease-in infinite;
+}
+
+.head-bounce {
+	z-index: 100;
+	position: relative;
+	animation: bounce 3s ease infinite;
+}
+
+.orc-car {
+	@include obj-size(500px, 173px);
+	background-image: url(../images/Body.png);
+	animation: bounce 3s ease-out infinite;
+}
+
+.orc-wheel-1 {
+	@include obj-size(165px, 165px);
+	@include obj-position(240px, 55px, 100);
+	background-image: url(../images/Wheel.png);
+	position: absolute;
+	animation: wheeling 4s ease-in;
+}
+
+.orc-wheel-2 {
+	@include obj-size(165px, 165px);
+	@include obj-position(240px, 268px, 100);
+	background-image: url(../images/Wheel.png);
+	position: absolute;
+	animation: wheeling 4s ease-in;
+}
+
+@keyframes riding {
+	form { transform: translateX(0); }
+	to { transform: translateX(800px); }
+}
+
+@keyframes wheeling {
+	form { transform: rotate(0); }
+	to { transform: rotate(1turn); }
+}
+
+@keyframes heading {
+	0% { transform: rotate(0); }
+	50% { transform: rotate(10deg); }
+	100% { transform: rotate(0); }
+}
+
+@keyframes bounce {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(10px); }
+	100% { transform: translateY(0); }
+}
