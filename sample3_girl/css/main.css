@@ -1,2 +1,80 @@
-body{background-image:url(../images/bg3.jpg)}.girl-raider{width:500px;height:500px;z-index:1;top:70px;left:0px;position:relative;animation:riding 4s ease-in}.girl-head{width:197px;height:155px;z-index:100;top:28px;left:80px;background-image:url(../images/Head.png);position:relative;animation:heading 1s ease-in infinite}.head-bounce{z-index:100;position:relative;animation:bounce 3s ease infinite}.girl-car{width:500px;height:173px;background-image:url(../images/Body.png);animation:bounce 3s ease-out infinite}.girl-wheel-1{width:119px;height:119px;z-index:100;top:264px;left:58px;background-image:url(../images/Wheel.png);position:absolute;animation:wheeling 4s ease-in}.girl-wheel-2{width:119px;height:119px;z-index:100;top:264px;left:290px;background-image:url(../images/Wheel.png);position:absolute;animation:wheeling 4s ease-in}@keyframes riding{form{transform:translateX(0)}to{transform:translateX(800px)}}@keyframes wheeling{form{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes heading{0%{transform:rotate(0)}50%{transform:rotate(10deg)}100%{transform:rotate(0)}}@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(10px)}100%{transform:translateY(0)}}
+body {
+  background-image: url(../images/bg3.jpg);
+  background-repeat: repeat-x; }
+
+.girl-raider {
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  top: 70px;
+  left: 0px;
+  position: relative;
+  animation: riding 4s ease-in; }
+
+.girl-head {
+  width: 197px;
+  height: 155px;
+  z-index: 100;
+  top: 28px;
+  left: 80px;
+  background-image: url(../images/Head.png);
+  position: relative;
+  animation: heading 1s ease-in infinite; }
+
+.head-bounce {
+  z-index: 100;
+  position: relative;
+  animation: bounce 3s ease infinite; }
+
+.girl-car {
+  width: 500px;
+  height: 173px;
+  background-image: url(../images/Body.png);
+  animation: bounce 3s ease-out infinite; }
+
+.girl-wheel-1 {
+  width: 119px;
+  height: 119px;
+  z-index: 100;
+  top: 264px;
+  left: 58px;
+  background-image: url(../images/Wheel.png);
+  position: absolute;
+  animation: wheeling 4s ease-in; }
+
+.girl-wheel-2 {
+  width: 119px;
+  height: 119px;
+  z-index: 100;
+  top: 264px;
+  left: 290px;
+  background-image: url(../images/Wheel.png);
+  position: absolute;
+  animation: wheeling 4s ease-in; }
+
+@keyframes riding {
+  form {
+    transform: translateX(0); }
+  to {
+    transform: translateX(800px); } }
+@keyframes wheeling {
+  form {
+    transform: rotate(0); }
+  to {
+    transform: rotate(1turn); } }
+@keyframes heading {
+  0% {
+    transform: rotate(0); }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(0); } }
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+
 /*# sourceMappingURL=main.css.map */
