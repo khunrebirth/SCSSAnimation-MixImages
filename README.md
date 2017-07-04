@@ -1,4 +1,4 @@
-* Example
+# Example
 
 <p align="center">
 <img src="screenshot/screenshot.gif"></a>
